@@ -457,6 +457,9 @@ button {
     &:hover {
         filter: none;
     }
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 1140px) {
@@ -597,8 +600,9 @@ button {
     }
     .footer-bot {
         text-align: center;
+        p {
+            font-size: 12px;
+        }
     }
-    .footer-bot p {
-        font-size: 12px;
-    }
+        
 }
