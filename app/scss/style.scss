@@ -12,6 +12,8 @@ body {
     background-color: #fff;
 }
 button {
+    outline: none;
+    border: none;
     cursor: pointer;
 }
 .product__features {
@@ -76,8 +78,6 @@ button {
     height: 40px;
     background-color: $blue;
     color: #fff;
-    border: none;
-    outline: none;
     text-transform: uppercase;
     border-radius: 4px;
     transition: .5s ease;
@@ -209,6 +209,63 @@ button {
 }
 
 
+.product__qanda {
+    max-width: 1134px;
+    margin: 0 auto;
+    padding: 69px 25px;
+}
+
+.product__qanda-item {
+    padding: 20px 0;
+    border-top: 1px solid #D1D1D1;
+    &:last-child {
+        border-bottom: 1px solid #D1D1D1;
+    }
+}
+
+
+.product__quanda-title {
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 42px;
+    position: relative;
+    padding-right: 80px;
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 2px;
+        background-color: #000;
+        top: 50%;
+        right: 50px;
+        transition: .5s ease;
+    }
+    &::after {
+        transform: rotate(90deg);
+    }
+    &::before {
+        transform: rotate(0deg);
+    }
+    &.active {
+        &::after {
+            transform: rotate(0deg);
+        }
+    }
+}
+.product__quand-text {
+    padding: 30px 50px 0 30px;
+    font-size: 18px;
+}
+.active {
+    display: block !important;
+}
+.product__quand-text {
+    display: none;
+}
+
 
 @media screen and (max-width: 1140px) {
     .product__included-wrap {
@@ -245,9 +302,7 @@ button {
         flex: 50%;
     }
     .product__motto-title {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 142.9%;
+        font-size: 36px;
     }
     .product__options {
         flex-wrap: wrap;
@@ -273,5 +328,8 @@ button {
     }
     .product__options-desc-item {
         width: 90%;
+    }
+    .product__motto-title {
+        font-size: 2em;
     }
 }

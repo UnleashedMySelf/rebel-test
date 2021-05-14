@@ -105,10 +105,57 @@
                 </div>
             </div>
         </section>
+        <div class="product__qanda">
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">How do I use my Rebel Massage Gun?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">How long should I use my Rebel?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">What is Deep-Tissue / Percussion Therapy?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">What are the benefits of REBEL?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">Can I travel with my Rebel?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">How much will I pay for shipping?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">How long does shipping take?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">What is your return policy?</button>
+                <p class="product__quand-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam fugit totam repudiandae mollitia ipsa quod minus nam, temporibus eveniet aut culpa illo nemo ad, sed non doloribus corrupti fuga.</p>
+            </div>
+            <div class="product__qanda-item">
+                <button class="product__quanda-title">Does Rebel come with a warranty?</button>
+                <p class="product__quand-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum labore exercitationem voluptatum mollitia aliquam minus eligendi laborum blanditiis eius deserunt quia ea illo explicabo ut, nihil fugit, est iusto.</p>
+            </div>
+        </div>
     </main>
     <footer>
     </footer>
-
+    
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
     <script src="js/main.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".product__quanda-title").click(function(){
+            $(this).siblings('.product__quand-text').slideToggle("slow");
+            $(this).toggleClass("active"); 
+        });
+    });
+    </script>
 </body>
 </html>
