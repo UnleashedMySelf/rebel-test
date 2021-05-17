@@ -472,6 +472,21 @@ button {
 }
 /* Product footer -- end */
 
+/* LIVE CHAT BUTTON -- start */
+.live-chat {
+    position: fixed;
+    transition: .5s ease;
+    width: 125px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    right: -48px;
+    transform: rotate(-90deg);
+    bottom: 200px;
+    z-index: 5;
+}
+/* LIVE CHAT BUTTON -- end */
+
 /* Addaptive */
 @media screen and (max-width: 1140px) {
     .product__included-wrap {
