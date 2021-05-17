@@ -222,7 +222,7 @@ button {
 .product__qanda {
     max-width: 1134px;
     margin: 0 auto;
-    padding: 69px 25px;
+    padding: 69px 25px 140px;
 }
 .product__qanda-item {
     padding: 20px 0;
@@ -397,6 +397,8 @@ button {
     display: flex;
     p {
         font-family: 'Roboto';
+        color: #4F4F4F;
+        letter-spacing: 0.1em;
     }
 }
 .footer-subscribe-email {
@@ -484,6 +486,8 @@ button {
     transform: rotate(-90deg);
     bottom: 200px;
     z-index: 5;
+    font-size: 14px;
+    line-height: 16px;
 }
 /* LIVE CHAT BUTTON -- end */
 
